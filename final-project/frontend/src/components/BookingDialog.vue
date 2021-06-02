@@ -13,18 +13,6 @@
           <v-text-field v-model="booking.description" label="Description" />
           <v-text-field v-model="booking.tourist" label="Tourist's name" :disabled="!isNew" />
           <v-text-field v-model="booking.room" label="Reserved room" />
-<!--          <v-label >Patient</v-label>-->
-<!--          <v-select v-model="patient"-->
-<!--                    :items ="patients"-->
-<!--                    item-text='name'-->
-<!--                    item-value='id'-->
-<!--                    :patient = "selectedPatient"-->
-<!--                    >-->
-<!--          </v-select>-->
-<!--          <v-label >Doctor</v-label>-->
-<!--          <v-select :items="doctors"-->
-<!--                    @refresh="refreshList">-->
-<!--          </v-select>-->
 
           <datetime format="MM-DD-YYYY H:i" width="300px" v-model="booking.checkin" label = "checkin"></datetime>
           <datetime format="MM-DD-YYYY H:i" width="300px" v-model="booking.checkout" label = "checkout"></datetime>
@@ -103,9 +91,6 @@ export default {
     async refreshList() {
       this.selectedTourist = {};
       this.tourists = await api.tourists.allTourists();
-
-      // this.selectedDoctor = {};
-      // this.doctors = await api.users.allDoctors();
     },
 
   created() {

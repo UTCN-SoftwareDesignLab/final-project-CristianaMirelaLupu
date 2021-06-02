@@ -2,6 +2,7 @@ package com.demo.booking;
 
 import com.demo.booking.model.dto.BookingDTO;
 import com.demo.booking.model.Booking;
+import com.demo.emailsender.EmailService;
 import com.demo.tourist.TouristMapper;
 import com.demo.tourist.TouristRepository;
 import com.demo.tourist.TouristService;
@@ -14,13 +15,18 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.mail.*;
+import javax.mail.internet.*;
 import javax.persistence.EntityNotFoundException;
+import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 import java.util.stream.Collectors;
 
 @Service
@@ -30,12 +36,8 @@ public class BookingService {
     @Autowired
     private final BookingRepository bookingRepository;
     private final BookingMapper bookingMapper;
-    private final TouristMapper touristMapper;
-    private final UserRepository userRepository;
-    private final UserMapper userMapper;
-    private final TouristRepository touristRepository;
-    private final UserService userService;
     private final TouristService touristService;
+    private final EmailService emailService;
 
 
     Booking findById(Long id) {
@@ -97,13 +99,17 @@ public class BookingService {
         }
 
         if (!hasOverlap) {
-            return bookingMapper.toDto(bookingRepository.save(actBooking), formatter);
+            BookingDTO newBooking = bookingMapper.toDto(bookingRepository.save(actBooking), formatter);
+
+            emailService.sendmail(newBooking, tourist);
+            return newBooking;
+
         } else {
             throw new Exception("Invalid date and time");
         }
     }
 
-    public BookingDTO edit(BookingDTO booking) throws Exception {
+        public BookingDTO edit(BookingDTO booking) throws Exception {
 
         Tourist tourist = touristService.findByUsername(booking.getTourist());
 
@@ -117,9 +123,6 @@ public class BookingService {
         if(tourist.getContorBooking() != 0){
             price = price - 25;
         }
-
-        //int loialty = tourist.getContorBooking() + 1;
-        //tourist.setContorBooking(loialty);
 
         Booking actBooking = new Booking().builder()
                 .id(booking.getId())

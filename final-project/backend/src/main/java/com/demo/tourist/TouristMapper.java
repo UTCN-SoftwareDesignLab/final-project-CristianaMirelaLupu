@@ -8,7 +8,6 @@ import org.mapstruct.Mapper;
 public interface TouristMapper {
 
     TouristDTO toDto(Tourist tourist);
-
     Tourist toTourist(TouristDTO tourist);
 
 }

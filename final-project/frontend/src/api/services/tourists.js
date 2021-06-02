@@ -1,4 +1,5 @@
 import authHeader, { BASE_URL, HTTP } from "../http";
+import { saveAs } from 'file-saver';
 
 export default {
   allTourists() {
@@ -30,4 +31,15 @@ export default {
             }
         );
     },
+
+    loyalTourists(){
+        return HTTP.get(BASE_URL + "/tourist/export", { headers: authHeader() , responseType: 'blob'}).then(
+            (response) => {
+                console.log(response);
+                let blob = new Blob([response.data], {type: "text/csv;charset=utf-8"});
+                saveAs(blob, "Report.csv");
+            }
+        );
+    }
+
 };

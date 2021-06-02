@@ -13,8 +13,8 @@ public class UrlMapping {
     public static final String TOURIST =  API_PATH + "/tourist";
     public static final String BOOKING =  API_PATH + "/booking";
 
-    public static final String BOOKINGHOUSEKEEPER =  API_PATH + "/booking";
+    //public static final String BOOKINGHOUSEKEEPER =  API_PATH + "/housekeeperbooking";
 
-    //public static final String DOCTOR =  API_PATH + "/doctor";
+    public static final String EXPORT_REPORT = "/export";
 
 }

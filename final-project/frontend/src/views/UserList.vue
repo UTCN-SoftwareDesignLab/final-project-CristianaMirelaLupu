@@ -58,8 +58,7 @@ export default {
     },
 
     loyalTourists() {
-      //console.log(("Add user"))
-        //api.tourists.csv();
+      api.tourists.loyalTourists();
     },
 
     async refreshList() {

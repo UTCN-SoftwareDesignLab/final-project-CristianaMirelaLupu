@@ -12,7 +12,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 
         @Override
         public void configureMessageBroker(MessageBrokerRegistry config) {
-            config.enableSimpleBroker("/topic");
+            config.enableSimpleBroker("/housekeeperbooking");
             config.setApplicationDestinationPrefixes("/app");
         }
 
@@ -20,5 +20,4 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
         public void registerStompEndpoints(StompEndpointRegistry registry) {
             registry.addEndpoint("/gs-guide-websocket").withSockJS();
         }
-
     }

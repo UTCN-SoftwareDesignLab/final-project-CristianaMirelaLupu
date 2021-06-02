@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-card-title>
-      Bookings
+      Room to clean
       <v-spacer></v-spacer>
 
     </v-card-title>
@@ -21,12 +21,9 @@
 
 <script>
 import api from "../api";
-import BookingDialog from "../components/BookingDialog";
-import router from "@/router";
 
 export default {
   name: "BookingListHouseKeeperList",
-  components: { BookingDialog },
   data() {
     return {
       bookings: [],
@@ -48,18 +45,6 @@ export default {
     };
   },
   methods: {
-    editBooking(booking) {
-      this.selectedBooking = booking;
-      this.dialogVisible = true;
-    },
-    addBooking() {
-      this.dialogVisible = true;
-    },
-
-    goToTourists() {
-      router.push("/tourists");
-    },
-
     async refreshList() {
       this.dialogVisible = false;
       this.selectedBooking = {};
@@ -68,6 +53,7 @@ export default {
   },
   created() {
     this.refreshList();
+    this.connectAndSubscribe();
   },
 };
 </script>

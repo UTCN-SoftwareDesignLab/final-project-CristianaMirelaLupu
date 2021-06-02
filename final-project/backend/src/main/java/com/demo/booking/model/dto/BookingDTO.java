@@ -15,6 +15,7 @@ public class BookingDTO {
     private String description;
     private String tourist;
     private int room;
+    private int price;
     private String checkin;
     private String checkout;
 }

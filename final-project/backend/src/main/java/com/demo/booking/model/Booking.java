@@ -33,10 +33,6 @@ public class Booking {
     @Column(nullable = false)
     private int room;
 
-//    @ManyToOne
-//    @JoinColumn(name = "doctor_id")
-//    private User doctor;
-
     @Column(nullable = false)
     private LocalDateTime checkin;
 

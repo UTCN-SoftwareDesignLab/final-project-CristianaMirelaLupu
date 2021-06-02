@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import UserList from "../views/UserList.vue";
 import BookingList from "../views/BookingList.vue";
 import TouristList from "@/views/TouristList";
+import BookingListHousekeeper from "@/views/BookingListHousekeeper";
 import { auth as store } from "../store/auth.module";
 import Login from "../views/Login";
 
@@ -38,15 +39,29 @@ const routes = [
       }
     },
   },
+
   {
     path: "/bookings",
     name: "Bookings",
     component: BookingList,
     beforeEnter: (to, from, next) => {
-      if (store.getters.isHousekeeper) {
+      if (store.getters.isReceptionist) {
         next();
       } else {
         next({ name: "Booking" });
+      }
+    },
+  },
+
+  {
+    path: "/housekeeperbookings",
+    name: "to clean",
+    component: BookingListHousekeeper,
+    beforeEnter: (to, from, next) => {
+      if (store.getters.isHousekeeper) {
+        next();
+      } else {
+        next({ name: "to clean" });
       }
    },
   },

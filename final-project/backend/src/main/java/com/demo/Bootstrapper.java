@@ -65,7 +65,7 @@ public class Bootstrapper implements ApplicationListener<ApplicationReadyEvent> 
                     .build());
 
             authService.register(SignupRequest.builder()
-                    .email("receptionist.receptionist@gmail.com")
+                    .email("cristianawolf18@gmail.com")
                     .username("receptionist")
                     .password("Aleluia123!")
                     .roles(Set.of("RECEPTIONIST"))
@@ -83,7 +83,7 @@ public class Bootstrapper implements ApplicationListener<ApplicationReadyEvent> 
                     .card("1234")
                     .SSN("123445678910")
                     .birthDate(Date.valueOf(LocalDate.now()))
-                    .address("Cluj-Napoca")
+                    .address("cristiana.wlf@gmail.com")
                     .build());
 
             touristService.create(TouristDTO.builder()
@@ -91,7 +91,7 @@ public class Bootstrapper implements ApplicationListener<ApplicationReadyEvent> 
                     .card("9874")
                     .SSN("123445678911")
                     .birthDate(Date.valueOf(LocalDate.now()))
-                    .address("Cluj-Napoca")
+                    .address("cristianawolf18@gmail.com")
                     .build());
         }
     }

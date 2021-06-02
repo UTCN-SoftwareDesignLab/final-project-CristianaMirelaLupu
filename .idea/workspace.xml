@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbdc2fec-7786-4903-b0fd-ea73cbae3f7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/emailsender/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/emailsender/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/notification/HousekeeperNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/notification/TouristLeft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/report/CSVReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/report/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final-project/frontend/src/api/services/websocket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/backend/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/backend/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/Bootstrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/Bootstrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/UrlMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/UrlMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/booking/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/booking/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/booking/model/dto/BookingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/booking/model/dto/BookingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/notification/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/notification/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/notification/WebSocketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/notification/WebSocketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/tourist/TouristController.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/tourist/TouristController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/tourist/TouristService.java" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/backend/src/main/java/com/demo/tourist/TouristService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/frontend/src/api/services/tourists.js" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/frontend/src/api/services/tourists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/frontend/src/views/BookingListHousekeeper.vue" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/frontend/src/views/BookingListHousekeeper.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/frontend/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/frontend/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/final-project/frontend/src/views/UserList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/final-project/frontend/src/views/UserList.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1tNox0c330AsMSxCiRK0JYu15Wh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbdc2fec-7786-4903-b0fd-ea73cbae3f7a" name="Default Changelist" comment="" />
+      <created>1622619155598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622619155598</updated>
+      <workItem from="1622619159452" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

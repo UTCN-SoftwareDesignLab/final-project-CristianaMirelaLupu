@@ -89,7 +89,7 @@ export default {
             if (this.$store.getters["auth/isReceptionist"]) {
               router.push("/tourists");}
               if (this.$store.getters["auth/isHousekeeper"]) {
-                router.push("/bookings");}
+                router.push("/housekeeperbookings");}
         } else {
           alert("Invalid credentials!");
         }
